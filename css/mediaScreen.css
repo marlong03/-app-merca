@@ -1,0 +1,299 @@
+@media(max-width:950px){
+    .login__modal--options{
+        right: 10vw;
+    }
+    .register__target div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin:0;
+    }
+    .register div input{
+        margin:5px 0;
+        width:70%;
+    }
+    .register article form{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container__marca{
+        display: none;
+    }
+    .container__carrito{
+       display: block;
+    }
+    .container__carrito div{
+        justify-content:initial;
+        
+    }
+    .container__busqueda{
+        padding: 0 10px;
+    }
+    .container__login{
+        padding: 0 10px;
+        margin: 0 10px;
+
+    }
+    .aside__filter{
+        width:30%;
+    }
+    .section__first{
+        width:70%;
+    }
+    .container__content--header{
+        margin:0;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media (max-width:730px){
+    .login__modal--options{
+        right: 5vw;
+    }
+    main{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .aside__filter{
+        width:90%;
+        
+        
+    }
+    .container__filters{
+        display: flex;
+
+    }
+    .filter__container{
+        width:34%;
+    }
+    .section__first{
+        width:90%;
+        justify-content: center;
+        margin:10px;
+    }
+    .modal__product--content{
+        display: flex;
+        flex-direction: column;
+    }
+    .modal__product--content img{
+        width:200px;
+        height: 200px;
+    }
+    .modal__product--content h2{
+        font-size: 30px !important;
+        margin:2px !important;
+    }
+    .modal__product--content p{
+        margin:2px !important;
+    }
+    .modal__product{
+        padding:50px 0;
+    }
+    .modal__carrito,.modal__pay{
+        width: 82%;
+    }
+}
+@media (max-width:675px){
+    .login__modal--options{
+        right: 0vw;
+    }
+ #inputTextSearch{
+     width:200px;
+ }
+ .container__carrito{
+    width:auto;
+}
+.container__busqueda{
+    order:1;
+}
+.container__login{
+    order:3
+
+}
+.modal__product{
+    width:90%;
+}
+#cerrarModalProduct{
+    left:calc(-35%);
+    top:25px;
+}
+.modal__carrito--content section{
+    height:150px;
+}
+.modal__carrito, .modal__pay{
+    height: 100%;
+    border-radius: 0;
+    width:100vw;
+    padding:10px;
+
+}
+.modal__carrito h1{
+    margin-right: 20px;
+}
+.modal__carrito #btnCerrarModalCarrito{
+    margin-left: 20px;
+}
+#modalCarritoContent{
+    height: 55vh;
+    margin:20px 15px;
+}
+#btnVaciarCarrito{
+    margin-left: 10px;
+}
+#btnCerrarModalPay{
+    margin-left: 20px;
+}
+.modal__pay--header h1{
+    margin-right: 20px;
+
+}
+.modal__pay--content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.modal__pay--header{
+    justify-content: space-between;
+    text-align: end;
+}
+
+.modal__pay--content div input,.modal__pay--content select{
+    width:80%;
+    padding:10px 15px;
+}
+}
+@media (max-width:450px){
+    .login__modal--options{
+        right: 0vw;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    header img{
+        width:70px;
+        
+    }
+    header h1{
+        font-size:70px;
+    }
+    .modal{
+        width:100%;
+        height: 100vh;
+        border-radius: 0px;
+    }
+    .modal img{
+        width:200px;
+    }
+    .register__target{
+        width:80%;
+    }
+    .container__login{
+        margin:0;
+        padding-right:0;
+    }
+    .container__carrito{
+        padding:0;
+    }
+    .container__busqueda{
+        padding:0 10px 0 0;
+    }
+    
+    .container__filters{
+        display: block;
+
+    }
+    .filter__container{
+        width:90%;
+    }
+    #inputTextSearch{
+        width:90px;
+        padding-left: 2px;
+    }
+    .target{
+        width:250px;
+        margin-top: 10px;
+    }
+    .target__btns{
+        display: flex;
+        justify-content: center;
+    }
+    .target__btns input{
+        padding:15px 30px;
+    }
+    #mensajeCarrito{
+        font-size: 13px;
+    }
+    .modal__product{
+        height: 100vh;
+        width:100vw;
+        border-radius: 0;
+        position: relative;
+        top:0;
+    }
+}   
+@media(max-width:370px){
+    .login__modal--options{
+        right: 0vw;
+    }
+    .section__first{
+        margin:0;
+    }
+    #inputTextSearch{
+        width:50px;
+        padding-left: 2px;
+    }
+    .modal__product{
+        width:100%;
+        height: 100vh;
+    }
+    .modal__container{
+        height: 100vh;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header img{
+        width:70px;
+        
+    }
+    header h1{
+        font-size:70px;
+    }
+    .login__target{
+        
+        padding:30px 10px;
+    }
+    .register__target{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 100vh;
+    }
+    .modal{
+        width:100%;
+    }
+    .modal img{
+        width:200px;
+    }
+    #btnVaciarCarrito{
+        padding:10px 22px;
+    }
+    .modal__carrito--pay{
+        justify-content: center;
+        padding:0;
+    }
+    .modal__carrito--pay input{
+        margin:10px;
+    }
+}

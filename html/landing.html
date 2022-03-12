@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/landing.css">
+    <link rel="stylesheet" href="../css/modalLogin.css">
+    <link rel="stylesheet" href="../css/mediaScreen.css">
+    <title>Landing</title>
+</head>
+<body>
+    <article class="notificacion displayNone" id="notificacion">
+        <p id="productoAñadidoCarrito"></p>
+    </article>
+    <section class="container__all">
+
+    <header>
+        <section class="container__content--header">
+
+            <a class="redirectLogo"href="">
+            <div class="container__marca">
+
+                    <img src="../img/icon.png"  alt="" >
+                    <h1>MERCA</h1>
+                </div>
+            </a>
+            <form action="" class="container__busqueda">
+                <input type="text" id="inputTextSearch"placeholder="¿Que quieres buscar?">
+            </form>
+            <div class="container__carrito">
+                <div>
+                    <img src="../img/landing/carrito.png" alt="" id="logoCarrito">
+                    <p id="mensajeCarrito">Carrito vacio</p>
+                    <!-- <p>Tú carrito tiene <span>2</span> productos</p> -->
+                    <!-- <p><span>2</span></p> -->
+                </div>
+                <!-- <div>
+                    <span>Total: $23.000</span>
+                </div> -->
+            </div>
+            <div class="container__login">
+                <img src="../img/login/user.png"  alt="" id="imgUser">
+                <p id="nombreUserNow" >Inicia Sesión</p>
+                <div class="login__modal--options" id="modalOptions">
+                    <div class="figure__modal"></div>
+                    <p class="item__options">Ajustes</p>
+                    <p class="item__options" id="cerrarSesionBtn">Cerrar Sesion</p>
+
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <aside class="aside__filter">
+            <div class="filter__cabecera">
+                <p>Filtros </p>
+            </div>
+            <section class="container__filters">
+
+            <div class="filter__container">
+                <div class="filter__container--title">
+                    <p>Ordenar por:</p>
+                    <img src="../img/landing/flechaAbajo.png" alt="" id="flechaOrdenarPor"> 
+                </div>
+                <div class="filter__content filter__content--ordenar" >
+                    <ul>
+                        <li id="itemAlfabeto">alfabeto</li>
+                        <li id="itemPrecioMayor">precio: mas alto</li>
+                        <li id="itemPrecioMenor">precio: mas bajo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter__container">
+                <div class="filter__container--title">
+                    <p>Categoria</p>
+                    <img src="../img/landing/flechaAbajo.png" alt="" id="flechaCategoria"> 
+                </div>
+                <div class="filter__content filter__content--categoria">
+                    <ul>
+                        <li id="itemCongelados">Congelados</li>
+                        <li id="itemFrutasVerduras">Frutas y verduras</li>
+                        <li id="itemBebidas">Bebidas</li>
+                        <li id="itemLacteos">Lacteos</li>
+                        <li id="itemPasteleria">Pasteleria</li>
+                        <li id="itemDulces">Dulces</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter__container">
+                <div class="filter__container--title">
+                    <p>Precio</p>
+                    <img src="../img/landing/flechaAbajo.png" alt="" id="flechaPrecio"> 
+                </div>
+                <div class="filter__content filter__content--precio">
+                    Desde: <input type="text" placeholder="$" id="itemDesde">
+                    Hasta: <input type="text" placeholder="$" id="itemHasta">
+                    <div>
+                        <input type="button" value="Filtrar" id="itemEnviarPrecios">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- <div class="filter__container"> -->
+                <!-- <div class="filter__container--title">
+                    <p>Marca</p>
+                    <img src="../img/landing/flechaAbajo.png" alt="" id="flechaMarca"> 
+                </div>
+                <div class="filter__content filter__content--marca">
+                    <input type="text" placeholder="Buscar marca">
+                    <ul>
+                        <li>Ariel</li>
+                        <li>Salvo</li>
+                        <li>Huawei</li>
+                        <li>Hotwheels</li>
+                        <li>Samsung</li>
+                        <li>Campi</li>
+                    </ul>
+                </div> -->
+                    
+            <!-- </div> -->
+        </aside>
+        <section class="section__first" id="sectionFirst">
+            <!-- <article class="target">
+                <img src="../img/maracuya.jpg" alt="">
+                <div class="target__content">
+                    <h2>$12.000</h2>
+                    <p>maracuya con uvas</p>
+                </div>
+                <div class="target__btns">
+                    <input type="button" value="ver más">
+                    <input type="button" value="Añadir">
+                </div>
+            </article> -->
+        </section>
+  
+    </main>
+</section>
+    <!-- modal -->
+    <section class="modal__container">
+        <span id="cerrarModalProduct" class="xCerrar">X</span>
+        <div class="modal__product">
+            <div class="modal__product--content">
+                <div>
+                    <img src="../img/maracuya.jpg" alt="">
+                </div>
+                <div>
+                    <h2>$12.000</h2>
+                    <h3>maracuya con uvas</h3>
+                    <p>
+                        descripcion descripcion 
+                        descripcion descripcion descripcion
+                    </p>
+                        <h4>Categoria: Frutas y verduras</h4>
+                        <h4>Disponibilidad: <span> NO </span></h4>
+                        <input type="button" value="añadir" id="btnAñadirAlCarritoModal">
+                    </div>
+            </div>
+           
+
+           <!--  <div class="modal__product--others">
+                <article class="target">
+                    <img src="../img/maracuya.jpg" alt="">
+                    <div class="target__content">
+                        <h2>$12.000</h2>
+                        <p>maracuya con uvas y papas </p>
+                    </div>
+                    <div class="target__btns">
+                        <input type="button" value="ver más">
+                    </div>
+                </article>
+            </div> -->
+        </div>
+        <!-- <span class="btnCerrarModal" id="btnCerrarModal">X</span> -->
+    </section>
+    <section class="modal__container modal__container--carrito">
+        <div class="modal__carrito">
+            <div class="modal__carrito--header">
+                <div>
+                    <p class="xCerrar" id="btnCerrarModalCarrito">X</p>
+                </div>
+                <div>
+                    <h1>Carrito de compras</h1>
+                </div>
+            </div>
+            <div class="modal__carrito--content" >
+                <section id="modalCarritoContent">
+            </section>
+
+        <div class="modal__carrito--opciones">
+            <input id="btnVaciarCarrito"type="button" value="Vaciar carrito">
+            <p id="precioTotalCarritoId"> </p>
+        </div>
+        <div class="modal__carrito--pay">
+            <input type="button" value="Comprar" id="btnPay">
+        </div>
+            </div>
+        </div>
+    </section>
+    <section class="modal__container modal__container--pay">
+        <div class="modal__pay">
+            <div class="modal__pay--header">
+                <div>
+                    <p class="xCerrar" id="btnCerrarModalPay">X</p>
+                </div>
+                <div>
+                    <h1>Formulario Compra</h1>
+                </div>
+            </div>
+            <div class="modal__pay--content" >
+                <!-- contenido -->
+                <section >
+                    <div>
+                        <input type="email" id="direccionEntrega" placeholder="Direccion de Entrega" required>
+                        <input type="date" id="fechaEntrega" placeholder="" required>
+                    </div>
+                    <div>
+                        <select name="" id="" required>
+                            <option value="">Metodo de pago</option>
+                            
+                            <option value="Paypal">Paypal</option>
+                            <option value="Paypal">Nequi</option>
+                            <option value="Paypal">daviplata</option>
+                            <option value="Paypal">Pago contra entrega</option>
+
+
+
+                        </select>
+                    </div>
+                </section>
+    
+            </div>
+            <div class="modal__carrito--pay">
+                <input type="button" value="Comprar" id="btnPay2">
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>    
+<script src="../js/landing.js"></script>
+
+</body>
+</html>

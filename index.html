@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <title>¡Inicia sesion aqui!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/modalLogin.css">
+    <link rel="stylesheet" href="css/mediaScreen.css">
+</head>
+
+<body>
+    <div class="container__page" id="container__page">
+        <header>
+            <img src="./img/icon.png" alt="icono">
+            <h1>MERCA</h1>
+        </header>
+        <main>
+            <section class="login__target">
+
+                <h2>Inicio sesión</h2>
+                <section class="login__container--inputs">
+                    <div>
+                        <img src="./img/login/user.png" alt="">
+                        <input type="email" id="email" placeholder="Correo">
+                    </div>
+                    <div>
+                        <input type="password"  id="password"placeholder="Contraseña">
+                        <img src="./img/login/lock.png" id="imgPassword" alt="">
+                    </div>
+                    <div>
+                        <input type="button" value="Enviar" id="btnEnviar">
+                    </div>
+                </section>
+                
+            </section>
+            <input id="btnRegisterId"class="btnRegister"value="Registrate aquí">
+    </div>
+        <!--  -->
+        <section class="modal__container">
+            <div class="modal">
+                <img src="./img/imgLogin.svg" alt="">
+                <h3 class="modalMsj"></h3>
+                <a id="btnAceptarModal">Aceptar</a>
+            </div>
+            <!-- <span class="btnCerrarModal" id="btnCerrarModal">X</span> -->
+        </section>
+        <!--  -->
+
+        <!--  -->
+        <section class="registerTargetContainer">
+
+        <section class="login__target register__target">
+
+            <h2>Registrate</h2>
+            <section class="login__container--inputs register">
+                <div>
+                    <input type="email" id="emailRegister" placeholder="Correo" required>
+                    <input type="text" id="phoneRegister" placeholder="Numero Telefonico" required>
+                </div>
+                <div>
+                    <input type="password"  id="passwordRegister" minlength="5" placeholder="Contraseña" required>
+                    <input type="name" placeholder="Nombre Completo"  id="nameRegister" required>
+                </div>
+                <h3>Genero</h3>
+                <article>
+                    <form id="formGender">
+                          <input type="radio" id="mujer" name="seleccionGenero" value="mujer">
+                          <label for="mujer">Mujer</label>
+                          <input type="radio" id="hombre" name="seleccionGenero" value="hombre">
+                          <label for="hombre">Hombre</label>
+                          <input type="radio" id="otro" name="seleccionGenero" value="otro">
+                          <label for="otro">otro</label>
+                    </form> 
+                </article>
+                <article class="container__btn">
+                    <input type="button" value="Registrarte" id="btnRegistrarUser">
+                </article>
+            </section>
+        </section>
+    </section>
+        <!--  -->
+
+    </main>
+    <script src="./js/login.js"></script>
+</body>
+</html>

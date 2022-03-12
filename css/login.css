@@ -1,0 +1,117 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px 0;
+}
+header h1{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 100px;
+}
+header img{
+    width:100px;
+    height: 100px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+.login__target{
+    background-color: #252525;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #666666;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:40px;
+}
+.login__target h2{
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 20px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.login__container--inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login__container--inputs div{
+    display: flex;
+    align-items:center;
+    margin:5px 0;
+}
+.login__container--inputs input{
+    padding:13px 20px;
+    padding-left: 50px;
+    border-radius: 40px;
+    border:none;
+    background-color: #cecece;
+    position: relative;
+    margin:0 5px;
+}
+.login__container--inputs div input:first-child{
+    padding:13px 32px;
+}
+.container__btn{
+    margin-top: 10px;
+}
+.register input{
+    padding-left: 20px;
+}
+.register article{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.register h3{
+    margin:10px 0;
+}
+.login__container--inputs img{
+    width:30px;
+    background-color: #e2e2e2;
+    border-radius: 100%;
+    padding:10px;
+    z-index: 1;
+    box-shadow: 0px 0px 15px #323a2e;
+    margin-left: -40px;
+    cursor: pointer;
+}
+.login__container--inputs img:first-child{
+    margin-right: -40px;
+    margin-left: 0;
+    cursor:auto;
+}
+.login__container--inputs input[type=button]{
+    background-color: #98de4b;
+    font-size: 17px;
+    padding: 8px auto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border:3px solid transparent;
+    font-weight: 500;
+}
+.login__container--inputs input[type=button]:hover{
+    border:3px solid white;
+}
+.btnRegister{
+    margin-top: 30px;
+    color:white;
+    background-color: #252525;
+    padding:10px 30px;
+    border-radius: 50px;
+    text-align: center;
+    cursor:pointer;
+}
+.btnRegister:hover{
+   color:#98de4b;
+}
+#btnEnviar{
+    padding:8px 100px;
+}
+/* ------------Register ----------------- */
