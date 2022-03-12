@@ -140,8 +140,8 @@ function realiceLogin(){
                     aparecerModal("Bienvenido " + usuarioNow.name)
                     console.log(res)
                     setTimeout(()=>{
-                        redireccionarUrl('html/landing.html')
-                    },2500)
+                        location.href=location.origin + "/-app-merca/html/landing.html"
+                    },2000)
                 })
                 .catch(res =>{
                     aparecerModal("No se pudo enviar a usernow")
