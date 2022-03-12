@@ -23,8 +23,8 @@ cerrarSesionBtn.addEventListener("click",()=>{
         'Content-type': 'application/json; charset=UTF-8' 
         }
     })
-    .then(x =>redireccionarUrl('/src/index.html'))
-    .catch(x => redireccionarUrl('/src/index.html'))
+    .then(x =>redireccionarUrl('/index.html'))
+    .catch(x => redireccionarUrl('/index.html'))
         
    /*  console.log("entraste");
     console.log("https://app-merca2.herokuapp.com/usernow/"+ nombreUserNow.textContent); */
@@ -52,12 +52,12 @@ fetch("https://app-merca2.herokuapp.com/usernow")
     try {
         nombreUserNow.innerHTML = nombreUserNowFirst
     } catch (error) {
-        redireccionarUrl("/src/index.html")
+        redireccionarUrl("/index.html")
     }
 })
 
 function redireccionarUrl(donde){
-    location.href=location.origin + donde
+    location.href=location.origin +"/-app-merca/" + donde
 }
 
 /* ------------------------- flechas filtros ------------------------ */
