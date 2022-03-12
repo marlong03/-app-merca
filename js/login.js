@@ -140,7 +140,7 @@ function realiceLogin(){
                     aparecerModal("Bienvenido " + usuarioNow.name)
                     console.log(res)
                     setTimeout(()=>{
-                        redireccionarUrl('/html/landing.html')
+                        redireccionarUrl('/-app-merca/html/landing.html')
                     },2500)
                 })
                 .catch(res =>{
