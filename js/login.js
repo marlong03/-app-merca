@@ -140,7 +140,7 @@ function realiceLogin(){
                     aparecerModal("Bienvenido " + usuarioNow.name)
                     console.log(res)
                     setTimeout(()=>{
-                        redireccionarUrl('/-app-merca/html/landing.html')
+                        redireccionarUrl('html/landing.html')
                     },2500)
                 })
                 .catch(res =>{
@@ -188,5 +188,5 @@ function accionarModalRegister(){
 }
 console.log(window.location.origin);
 function redireccionarUrl(donde){
-    location.href=location.origin + donde
+    location.href=location.origin+ "/-app-merca/" + donde
 }
